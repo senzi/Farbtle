@@ -2,7 +2,8 @@
 <html lang="zh-CN">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="/template/style.css">
+	<link rel="stylesheet" href="/template/css/normalize.css">
+	<link rel="stylesheet" href="/template/css/style.css">
 	<title>{{ site.title }}</title>
 </head>
 <body>
@@ -49,10 +50,7 @@
 		<section id="footer">&copy; 2013 {{ site.title }} | Coded by <a href="http://sync.sh" target="_blank">YCF</a> | Inspired by <a href="https://svbtle.com/" target="_blank">Svbtle</a> | Thanks <a href="http://farbox.com" target="_blank">FarBox</a> | <a href="http://sync.sh/template" target="_blank">Clone Theme</a></section>
 	</section>
 	</section>
-	<script type="text/javascript" src="/template/scripts.js"></script>
-		{% set custom_js=get_text_file('custom_js').raw_content %}
-			{% if custom_js %}
-			{{ custom_js }}
-	{% endif %}
+	
+	<link href='http://fonts.useso.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 </body>
 </html>

@@ -1,7 +1,7 @@
 /* entire container, keeps perspective */
 .flip-container {
   perspective: 1000;
-  margin: -40 auto;
+  margin: 0 auto;
 }
 /* flip the pane when hovered */
 .flip-container:hover .flipper,
@@ -59,38 +59,39 @@ h6 {
 .container {
   width: 960px;
   margin: 200px auto 500px auto;
-  background-color: #334;
+  background-color: #FFF;
 }
 .main-header {
   background-image: url(https://unsplash.it/1000/240/?image=307);
   padding: 1px;
 }
 .main-header__avatar {
-  background-image: url(/template/av1.jpg);
+  background-image: url(../img/av1.jpg);
   display: block;
   width: 130px;
   height: 130px;
   margin: 0 auto;
-  margin-top: -40px;
+  margin-top: -70px;
   margin-bottom: 1px;
   border: 3px solid white;
   border-radius: 999px;
   box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .main-header__avatar__back {
-  background-image: url(/template/av2.jpg);
+  background-image: url(../img/av2.jpg);
   display: block;
   width: 130px;
   height: 130px;
   margin: 0 auto;
-  margin-top: -30px;
+  margin-top: -70px;
   margin-bottom: 1px;
   border: 3px solid white;
   border-radius: 999px;
   box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .main-header h1 {
-  margin: 5px auto;
+  margin: 0px auto;
+  margin-top: -70px;
   text-align: center;
   color: white;
   font-size: 50px;
@@ -140,9 +141,9 @@ h6 {
 .info-section header h2:after {
   content: "";
   width: 100px;
-  height: 2px;
+  height: 20px;
   display: block;
-  margin: 10 auto;
+  margin: 0 auto;
   border-bottom: 2px solid #666;
 }
 .info-section__description {
@@ -161,15 +162,15 @@ h6 {
 }
 .info-section .whatido__skill--code {
   width: 33.3333333%;
-  background-image: url(../img/skill-code.png);
+  background-image: url(/template/img/skill-code.png);
 }
 .info-section .whatido__skill--design {
   width: 33.3333333%;
-  background-image: url(../img/skill-design.png);
+  background-image: url(/template/img/skill-design.png);
 }
 .info-section .whatido__skill--product {
   width: 33.3333333%;
-  background-image: url(../img/skill-product.png);
+  background-image: url(/template/img/skill-product.png);
 }
 .clearfix:after {
   content: "";

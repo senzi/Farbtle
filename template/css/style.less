@@ -1,7 +1,7 @@
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000;
-	margin:-40 auto;
+	margin:0 auto;
 }
 	/* flip the pane when hovered */
 	.flip-container:hover .flipper, .flip-container.hover .flipper {
@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 .container{
 	width: 960px;
 	margin:200px auto 500px auto;
-	background-color: #334;
+	background-color: #FFF;
 }
 
 .main-header{
@@ -72,12 +72,12 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 1px;
 	&__avatar{
 		@avatar_wh:130px; 
-		background-image: url(/template/av1.jpg);
+		background-image: url(../img/av1.jpg);
 		display: block;
 		width: @avatar_wh;
 		height: @avatar_wh;
 		margin: 0 auto;
-		margin-top: -40px;
+		margin-top: -70px;
 		margin-bottom: 1px;
 		border: 3px solid white;
 
@@ -86,12 +86,12 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	&__avatar__back{
 		@avatar_wh:130px; 
-		background-image: url(/template/av2.jpg);
+		background-image: url(../img/av2.jpg);
 		display: block;
 		width: @avatar_wh;
 		height: @avatar_wh;
 		margin: 0 auto;
-		margin-top: -30px;
+		margin-top: -70px;
 		margin-bottom: 1px;
 		border: 3px solid white;
 
@@ -100,7 +100,8 @@ h1, h2, h3, h4, h5, h6 {
 	}	
 
 	h1{
-		margin: 5px auto;
+		margin: 0px auto;
+		margin-top: -70px;
 		text-align: center;
 		color:white;
 		font-size: 50px;
@@ -153,9 +154,9 @@ h1, h2, h3, h4, h5, h6 {
 		&:after{
     		content: "";
     		width: 100px;
-    		height: 2px;
+    		height: 20px;
 			display: block;
-			margin: 10 auto;
+			margin: 0 auto;
     		border-bottom: 2px solid #666;
 		}
 	}
@@ -176,15 +177,15 @@ h1, h2, h3, h4, h5, h6 {
 	  	background-position: center top;
   		&--code {
   			width: @skill_width;
-	  		background-image: url(../img/skill-code.png);
+	  		background-image: url(/template/img/skill-code.png);
 		}
 		&--design {
 			width: @skill_width;
-	  		background-image: url(../img/skill-design.png);
+	  		background-image: url(/template/img/skill-design.png);
 		}
 		&--product {
 			width: @skill_width;
-	  		background-image: url(../img/skill-product.png);
+	  		background-image: url(/template/img/skill-product.png);
 		}
   	}
 }
