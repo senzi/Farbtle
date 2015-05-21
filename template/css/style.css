@@ -125,18 +125,18 @@ h6 {
   text-decoration: underline;
 }
 .info-section {
-  text-align: center;
   padding: 30px 60px;
-  margin-top: -20px;
   background-color: #fff;
 }
 .info-section header {
   margin-bottom: 60px;
+  text-align: center;
 }
 .info-section header h2 {
   font-size: 28px;
   letter-spacing: 3px;
   text-transform: uppercase;
+  text-align: center;
 }
 .info-section header h2:after {
   content: "";
@@ -147,14 +147,17 @@ h6 {
   border-bottom: 2px solid #666;
 }
 .info-section__description {
+  text-align: center;
   font-style: italic;
 }
 .info-section .whatido__skill-list {
+  text-align: center;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 .info-section .whatido__skill {
+  text-align: center;
   float: left;
   padding-top: 120px;
   background-repeat: no-repeat;
@@ -172,8 +175,258 @@ h6 {
   width: 33.3333333%;
   background-image: url(/template/img/skill-product.png);
 }
+.info-section article.one_post {
+  margin-bottom: 60px;
+}
+.info-section article.one_post h2 a {
+  text-decoration: none;
+}
+.info-section article.one_post .date {
+  float: right;
+  color: #333333;
+}
+.info-section article.one_post .content {
+  width: 100%;
+}
+.info-section article.one_post .content:after {
+  content: "";
+  width: 840px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-bottom: 2px dashed #C84848;
+}
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
+}
+.pager {
+  float: right;
+}
+.codehilite code,
+.codehilite pre {
+  word-break: break-word;
+  color: #fdce93;
+  background-color: #3f3f3f;
+  padding: 10px;
+  line-height: 1.2em;
+  border-radius: 3px;
+}
+.codehilite .hll {
+  background-color: #222222;
+}
+.codehilite .c {
+  color: #7f9f7f;
+}
+.codehilite .err {
+  color: #e37170;
+  background-color: #3d3535;
+}
+.codehilite .g {
+  color: #7f9f7f;
+}
+.codehilite .k {
+  color: #f0dfaf;
+}
+.codehilite .l {
+  color: #cccccc;
+}
+.codehilite .n {
+  color: #dcdccc;
+}
+.codehilite .o {
+  color: #f0efd0;
+}
+.codehilite .x {
+  color: #cccccc;
+}
+.codehilite .p {
+  color: #41706f;
+}
+.codehilite .cm {
+  color: #7f9f7f;
+}
+.codehilite .cp {
+  color: #7f9f7f;
+}
+.codehilite .c1 {
+  color: #7f9f7f;
+}
+.codehilite .cs {
+  color: #cd0000;
+  font-weight: bold;
+}
+.codehilite .gd {
+  color: #cd0000;
+}
+.codehilite .ge {
+  color: #ccc;
+  font-style: italic;
+}
+.codehilite .gr {
+  color: #ff0000;
+}
+.codehilite .gh {
+  color: #dcdccc;
+  font-weight: bold;
+}
+.codehilite .gi {
+  color: #00cd00;
+}
+.codehilite .go {
+  color: #808080;
+}
+.codehilite .gp {
+  color: #dcdccc;
+  font-weight: bold;
+}
+.codehilite .gs {
+  color: #ccc;
+  font-weight: bold;
+}
+.codehilite .gu {
+  color: purple;
+  font-weight: bold;
+}
+.codehilite .gt {
+  color: #0040d0;
+}
+.codehilite .kc {
+  color: #dca3a3;
+}
+.codehilite .kd {
+  color: #ffff86;
+}
+.codehilite .kn {
+  color: #dfaf8f;
+  font-weight: bold;
+}
+.codehilite .kp {
+  color: #cdcf99;
+}
+.codehilite .kr {
+  color: #cdcd00;
+}
+.codehilite .kt {
+  color: #00cd00;
+}
+.codehilite .ld {
+  color: #cc9393;
+}
+.codehilite .m {
+  color: #8cd0d3;
+}
+.codehilite .s {
+  color: #cc9393;
+}
+.codehilite .na {
+  color: #9ac39f;
+}
+.codehilite .nb {
+  color: #efef8f;
+}
+.codehilite .nc {
+  color: #efef8f;
+}
+.codehilite .no {
+  color: #cccccc;
+}
+.codehilite .nd {
+  color: #cccccc;
+}
+.codehilite .ni {
+  color: #c28182;
+}
+.codehilite .ne {
+  color: #c3bf9f;
+  font-weight: bold;
+}
+.codehilite .nf {
+  color: #efef8f;
+}
+.codehilite .nl {
+  color: #cccccc;
+}
+.codehilite .nn {
+  color: #8fbede;
+}
+.codehilite .nx {
+  color: #cccccc;
+}
+.codehilite .py {
+  color: #cccccc;
+}
+.codehilite .nt {
+  color: #9ac39f;
+}
+.codehilite .nv {
+  color: #dcdccc;
+}
+.codehilite .ow {
+  color: #f0efd0;
+}
+.codehilite .w {
+  color: #cccccc;
+}
+.codehilite .mf {
+  color: #8cd0d3;
+}
+.codehilite .mh {
+  color: #8cd0d3;
+}
+.codehilite .mi {
+  color: #8cd0d3;
+}
+.codehilite .mo {
+  color: #8cd0d3;
+}
+.codehilite .sb {
+  color: #cc9393;
+}
+.codehilite .sc {
+  color: #cc9393;
+}
+.codehilite .sd {
+  color: #cc9393;
+}
+.codehilite .s2 {
+  color: #cc9393;
+}
+.codehilite .se {
+  color: #cc9393;
+}
+.codehilite .sh {
+  color: #cc9393;
+}
+.codehilite .si {
+  color: #cc9393;
+}
+.codehilite .sx {
+  color: #cc9393;
+}
+.codehilite .sr {
+  color: #cc9393;
+}
+.codehilite .s1 {
+  color: #cc9393;
+}
+.codehilite .ss {
+  color: #cc9393;
+}
+.codehilite .bp {
+  color: #efef8f;
+}
+.codehilite .vc {
+  color: #efef8f;
+}
+.codehilite .vg {
+  color: #dcdccc;
+}
+.codehilite .vi {
+  color: #ffffc7;
+}
+.codehilite .il {
+  color: #8cd0d3;
 }

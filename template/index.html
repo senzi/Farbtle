@@ -18,61 +18,62 @@
 						<a class="main-header__avatar__back"></a>
 					</div>
 				</div>
-	  	</div>
-        <h1>たちばなかれん</h1>
+	  		</div>
+        	<h1>たちばなかれん</h1>
       	</header>
 		
 		<nav class="main-nav">
         <ul>
-          <li><a href="#">仕事</a></li>
-          <li><a href="#">経験</a></li>
-          <li><a href="#">写真</a></li>
-          <li><a href="#">連絡</a></li>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">空</a></li>
+          <li><a href="/links.md">links</a></li>
+          <li><a href="/about.md">about</a></li>
         </ul>
       	</nav>
 
 		<section class="info-section whatido">
         	<header>
-          		<h2>What I Do</h2>
-          		<p class="info-section__description">I'm Teng. I design and develop things on the web. Oh, and I like curry.</p>
+          		<h2>what i do</h2>
+          		<p class="info-section__description"></p>
         	</header>
         	<ul class="whatido__skill-list">
           		<li class="whatido__skill whatido__skill--code">
-            		<h3>Code</h3>
+            		<h3>敲代码</h3>
             		<p>I like building things on the web. I've built games, tools, and web apps.</p>
           		</li>
           		<li class="whatido__skill whatido__skill--design">
-            		<h3>Design / UX</h3>
+            		<h3>硬件</h3>
             		<p>I like creating happiness by making things look good and work well.</p>
           		</li>
           		<li class="whatido__skill whatido__skill--product clearfix">
-            		<h3>Product</h3>
+            		<h3>宅</h3>
             		<p>I like taking products from idea to reality to users and beyond!</p>
           		</li>
         	</ul>
       	</section>
 
-		<section id="posts">
+		<section class="info-section mypost" id="posts">
+			<header>
+          		<h2>Me.Post</h2>
+          		<p class="info-section__description"></p>
+        	</header>
 			{% set posts= get_posts(path='/', limit=10, sort=-1, status='public') %}
+
 			{% for post in posts %}
 			{% set content = post.content|limit(200)  %}
-			<article>
-				<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-				<div class="meta"><span class="date">{{ post.date | date('%Y.%m.%d') }}</span></div>
+			<article class="one_post">
+				<h2><a href="{{ post.url }}">{{ post.title }}</a><span class="date">{{ post.date | date('%Y.%m.%d') }}</span></h2>
 				<div class="content">
 					{{ content }}
 				</div>
 			</article>
 			{% endfor %}
-			{% if paginator.has_next %}
-			<nav class="pager">
-				<a href="/archive" class="next">Continue</a>
-			</nav>
-			{% endif %}
 
-		<section id="footer">&copy; 2013 {{ site.title }} | Coded by <a href="http://sync.sh" target="_blank">YCF</a> | Inspired by <a href="https://svbtle.com/" target="_blank">Svbtle</a> | Thanks <a href="http://farbox.com" target="_blank">FarBox</a> | <a href="http://senneszi.com/template" target="_blank">Clone Theme</a></section>
-		</section>
-	
+			{% if paginator.has_next %}
+			<div class="pager">
+				<a href="/archive" class="next">Continue</a>
+			</div>
+			{% endif %}
 		</section>
 
 		<link href='http://fonts.useso.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
